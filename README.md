@@ -1,7 +1,5 @@
-A PhD Thesis submitted to CUHK
----------------------------------------------
-Author: [ZHENG Fan](https://github.com/izhengfan)
-
+Guide
+=============================================
 ## Install dependencies
 
 The tex source file depends on several latex packages.
@@ -13,7 +11,7 @@ in Unix terminals.
 Note that TexLive installed via `apt install` in Ubuntu gives an unusable `tlmgr`,
 and one good solution is to uninstall it and reinstall TexLive
 via the tool in https://tug.org/texlive/quickinstall.html.
-   
+
 If using MikTex, required packages will be automatically installed during building.
 
 

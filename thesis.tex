@@ -1,12 +1,14 @@
 %!TEX program=xelatex
 \documentclass[12pt,a4paper,twoside]{report}
-% Revised by ZHENG Fan (fzheng@link.cuhk.edu.hk) according to
+%CHANGLOG
+% 1st Version is revised by ZHENG Fan (fzheng@link.cuhk.edu.hk) according to
 % CUHK Grad. School's requirements on thesis format. Check:
 %   https://www.gradsch.cuhk.edu.hk/pgstudent/gsinfo/research/Chapter%206.html
-
+% 2nd Version is revised by ZHOU Yuming (121050081@link.cuhk.edu.cn) and AN Zichun (121090001@link.cuhk.edu.cn)
+% with modifications on formats required by CUHKSZ made and comments added.
 %=======================================================
-% handle Chinese and fonts
-% CUHK has no limitations on font-types
+% For Chinese and fonts
+% CUHKSZ has no limitations on font-types and no requirement for whether traditional or simplified Chinese should be used
 \usepackage{fontspec}
 \usepackage[scheme=plain]{ctex}
 % \setCJKmainfont{SimSun} % 可自行更改为系统中文字体；SimSun即Windows宋体。
@@ -14,7 +16,7 @@
 \input{format/style}
 \input{format/symbols}
 %=======================================================
-% margins and spacing required by CUHK Grad-School
+% margins and spacing required by CUHKSZ
 % 4 cm margin for binding edge, 2.5 cm for outer edge:
 \usepackage[inner=4cm,outer=2.5cm]{geometry}
 \usepackage{setspace}
@@ -31,25 +33,33 @@
 \graphicspath{{figures/}}
 \usepackage[authoryear,square]{natbib} % citation style management
 \def\cite{\citep}
-% CUHK has no limitations on bibliography style, use your favor.
+% CUHKSZ has no limitations on bibliography style, use your favor.
 %\bibliographystyle{ieeetr} % for 'nubmers' citation style
 \bibliographystyle{apalike} % for 'authoryear' citation style
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=magenta]{hyperref}
 %=======================================================
 \begin{document}
 
-\thesistitle{The CUHK Thesis Title}
-\thesistitlezh{香港中文大学学位论文标题} % CUHK 对简繁体不作要求
-\authorname{ZHENG, Fan}
-\degree{Doctor of Philosophy}
-\programme{Mechanical and Automation Engineering}
-\institution{The Chinese University of Hong Kong}
+
+\thesistitle{TITLE OF YOUR THEIS OR DISSERTATION}
+\thesistitlezh{香港中文大学深圳学位论文标题} % CUHKSZ 对简繁体不作要求
+
+\authorname{LI, Tiezhu} % 洋文名字
+\authornamezh{李铁柱} % 中文名字
+
+
+\degree{Master of Philosophy} 
+
+
+\programme{Computer and Information Engineering}
+\institution{The Chinese University of Hong Kong, Shenzhen}
 \submitdate{March 1874}
 \committee{
 	Professor ZHANG San (Chair)\\
 	Professor LI Si (Thesis Supervisor)\\
 	Professor WANG Wu (Thesis Co-supervisor)\\
 	Professor ZHAO Liu (Committee Member)\\
+	Professor JIN Guo (Examiner from CUHK)\\
 	Professor WHO Ever (External Examiner)
 }
 \coverpage
@@ -83,9 +93,36 @@
 \input{sections/publications.tex}
 %=======================================================
 \newpage
-% CUHK recommend single-spaced references
+% Double or one-and-a-half line spacing should be used, except for quotations, footnotes, references and captions, which may be single-spaced.
 \setstretch{1}
 \bibliography{database}
 
 \end{document}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% 加油！
+% 不要放弃！
+% 咱们龙岗人最会卷了！
+% 洋文和论文多打磨打磨总会出成绩的！
