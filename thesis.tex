@@ -6,16 +6,22 @@
 %   https://www.gradsch.cuhk.edu.hk/pgstudent/gsinfo/research/Chapter%206.html
 % 2nd Version is revised by ZHOU Yuming (121050081@link.cuhk.edu.cn) and AN Zihang (121090001@link.cuhk.edu.cn)
 % with modifications on formats required by CUHKSZ made and comments added.
+
 %=======================================================
+
 % For Chinese and fonts
 % CUHKSZ has no limitations on font-types and no requirement for whether traditional or simplified Chinese should be used
 \usepackage{fontspec}
 \usepackage[scheme=plain]{ctex}
 % \setCJKmainfont{SimSun} % 可自行更改为系统中文字体；SimSun即Windows宋体。
+
 %=======================================================
+
 \input{format/style}
 \input{format/symbols}
+
 %=======================================================
+
 % margins and spacing required by CUHKSZ
 % 4 cm margin for binding edge, 2.5 cm for outer edge:
 \usepackage[inner=4cm,outer=2.5cm]{geometry}
@@ -24,7 +30,9 @@
 \setstretch{1.5}
 % avoid too much space automatically padded between paragraphs to fill a page:
 \raggedbottom
+
 %=======================================================
+
 % personally imported packages and customization
 \usepackage[mono=false]{libertine} % I personally favour this font
 \usepackage{subfig}
@@ -37,24 +45,26 @@
 %\bibliographystyle{ieeetr} % for 'nubmers' citation style
 \bibliographystyle{apalike} % for 'authoryear' citation style
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=magenta]{hyperref}
+
 %=======================================================
+
 \begin{document}
 
 
-\thesistitle{TITLE OF YOUR THEIS OR DISSERTATION}
+\thesistitle{TITLE OF YOUR THEIS OR DISSERTATION}% title of your thesis
 \thesistitlezh{香港中文大学深圳学位论文标题} % CUHKSZ 对简繁体不作要求
 
-\authorname{LI, Tiezhu} % 洋文名字
-\authornamezh{李铁柱} % 中文名字
+\authorname{LI Tiezhu} % English name
+\authornamezh{李铁柱} % Chinese name
 
 
-\degree{Master of Philosophy} 
+\degree{Master of Philosophy} % degree
 
 
-\programme{Computer and Information Engineering}
-\institution{The Chinese University of Hong Kong, Shenzhen}
-\submitdate{March 1874}
-\committee{
+\programme{Computer and Information Engineering} % programme
+\institution{The Chinese University of Hong Kong, Shenzhen} % institution
+\submitdate{August 1926} % submitdate
+\committee{% commitee list
 	Professor ZHANG San (Chair)\\
 	Professor LI Si (Thesis Supervisor)\\
 	Professor WANG Wu (Thesis Co-supervisor)\\
@@ -65,22 +75,30 @@
 \coverpage
 
 %=======================================================
+
 \pagenumbering{roman}
 \abstractpage
+
 %=======================================================
+
 \acknowledgementpage
+
 %=======================================================
+
 \tableofcontents
 \listoffigures
 \listoftables
 \input{sections/symbols-and-acronyms.tex}
+
 %=======================================================
 
 \newpage
 \setcounter{page}{0}
 \pagenumbering{arabic}
 \pagestyle{headings}
+
 %=======================================================
+
 %insert the chapters
 \input{sections/introduction.tex}
 \input{sections/chapter-one.tex}
@@ -88,10 +106,13 @@
 \input{sections/conclusion.tex}
 
 %=======================================================
+
 \appendix
 \input{sections/proof.tex}
 \input{sections/publications.tex}
+
 %=======================================================
+
 \newpage
 % Double or one-and-a-half line spacing should be used, except for quotations, footnotes, references and captions, which may be single-spaced.
 \setstretch{1}
